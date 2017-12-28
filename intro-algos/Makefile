@@ -1,8 +1,15 @@
-CC=gcc
-TGT=exec.out
+CC = gcc
+OBJECT = algos.o
+HEAD = algos.h
 
-SRC=*.c
+insertion-sort: $(OBJECT)
+	gcc -o insertion-sort.c $(OBJECT)
+#insertion-sort.o: insertion-sort.c $(HEAD)
+#	gcc -c insertion-sort.c
+algos.o: algos.c algos.h
+	gcc -c algos.c
 
-OBJ=$(SRC:.c=.o)
+.PHONY: clean
+clean:
+	rm $(OBJECT)
 
-$(TGT)=$(OBJ)
