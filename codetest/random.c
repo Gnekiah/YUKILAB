@@ -5,10 +5,10 @@
 #define BUFF_SIZE 16
 
 inline void* wtf_next_pos(unsigned char* c, unsigned char* s, int n) {
-    return (int)s - (int)c & (n-1);
+    return s - c & (n-1);
 }
 
-unsigned int randomq(void) {
+unsigned int wtf_random(void) {
     unsigned char *buff;
     unsigned int retval;
     unsigned char *pos;
@@ -26,6 +26,6 @@ unsigned int randomq(void) {
 }
 
 int main() {
-    randomq();
+    wtf_random();
     return 0;
 }
