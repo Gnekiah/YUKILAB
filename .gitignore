@@ -6,3 +6,4 @@
 *.un~
 hacking
 pdf2txt/.git
+.DS_Store
