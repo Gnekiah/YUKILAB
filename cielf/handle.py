@@ -2,7 +2,7 @@
 # filename: handle.py
 
 import hashlib
-import web
+import web, reply, receive
 
 class Handle(object):
     def GET(self):
@@ -28,7 +28,6 @@ class Handle(object):
                 return ""
         except Exception, Argument:
             return Argument
-
 
     def POST(self):
         try:
