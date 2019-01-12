@@ -1,3 +1,11 @@
+/*
+ * 继MIUI8推出手机分身功能之后，MIUI9计划推出一个电话号码分身的功
+ * 能：首先将电话号码中的每个数字加上8取个位，然后使用对应的大写
+ * 字母代替 （"ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX",
+ * "SEVEN", "EIGHT", "NINE"）， 然后随机打乱这些字母，所生成的字符
+ * 串即为电话号码对应的分身。
+ * */
+
 #include <stdio.h>
 #include <string.h>
 
